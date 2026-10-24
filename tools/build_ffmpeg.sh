@@ -26,7 +26,7 @@ COMPONENTS=(
   --enable-demuxer=mov,mxf,wav,matroska
   --enable-decoder=prores,h264,hevc,dnxhd,mjpeg,aac,'pcm_*'
   --enable-parser=h264,hevc,aac
-  --enable-filter=scale,format,aformat,fps,aresample,null,anull,trim,atrim,setpts,asetpts
+  --enable-filter=scale,format,aformat,fps,aresample,null,anull,trim,atrim,setpts,asetpts,crop  # crop・trim は Onset のコマ取り出し（flint_rush/onset/ocr.py）
   --enable-encoder=pcm_f32le,rawvideo,png
   --enable-muxer=rawvideo,image2,image2pipe,pcm_f32le,wav  # -f f32le の muxer 名は pcm_f32le
 )
